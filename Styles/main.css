@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  transition: all 1s;
+}
+nav ul li a:hover{
+    background-color: blueviolet;
+}
+.active{
+  background-color: blueviolet;
+  border-bottom: solid white;
+}
+
+h1{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+footer{
+    position: relative;
+    height: 100px;
+    padding-top: 58px;
+    background-color: rgb(212, 0, 255);
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+}
+.page1>section{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    top: 293px;
+    left: 120px;
+}
+.page1>section>img{
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    transition: all .3s linear;
+}
+.page1>section:hover>img{
+    transform: scale(1.4);
+}
+.page1>article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(103,58,183, .3);
+    transition: all .4s linear;
+    text-align: center;
+    transform: scale(0);
+    overflow: hidden;
+}
+.page1>section:hover>article{
+    transform: scale(1); 
+}
+.page1>article>h4{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    transform: translateY(-80px);
+    transition: all .5s linear;
+    transition-delay: .4s;
+}
+.page1>section:hover>article>h4 {
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 1);
+}
+.page1>article>p{
+    font-family: 'Roboto', sans-serif;
+    padding:0px 50px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    text-align: justify;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page1>section:hover>article>p{
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 1);
+}
+.page1>article>a{
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 188, 212, 0);
+    padding: 15px 25px;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page1>section:hover>article>a {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(0, 188, 212, 1);
+}
+.page1>header{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 293px;
+    left: 700px;
+    overflow: hidden;
+}
+.page1>header>img{
+    width: 500px;
+    height: 350px;
+    margin:auto;
+    transition: all .3s linear;
+}
+.page1 header:hover img{
+    transform: scale(1.4);
+}
+.page1 article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(103,58,183, .3);
+    transition: all .4s linear;
+    text-align: center;
+    transform: scale(0);
+    overflow: hidden;
+}
+.page1 header:hover article{
+    transform: scale(1); 
+}
+.page1 article h4{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    transform: translateY(-80px);
+    transition: all .5s linear;
+    transition-delay: .4s;
+}
+.page1 header:hover article h4 {
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 1);
+}
+.page1 article p{
+    font-family: 'Roboto', sans-serif;
+    padding:0px 50px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    text-align: justify;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page1 header:hover article p{
+    transform: translateY(0);
+    color: rgba(255, 255, 255, 1);
+}
+.page1 article a{
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 188, 212, 0);
+    padding: 15px 25px;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page1 header:hover article a {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgba(0, 188, 212, 1);
+}
+.page2{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 293px;
+    left: 120px;
+    overflow: hidden;
+}
+.page2 img{
+    transition: all .5s linear;
+}
+.page2:hover img{
+    transform: scale(1);
+}
+hgroup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(103,58,183, .3);
+    transform: scale(1);
+    transition: all .4s;
+    text-align: center;
+    transform: rotate(90deg) translateY(-425px) translateX(425px);
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.page2:hover hgroup{
+    transform: rotate(0) translateY(0) translateX(0); 
+}
+hgroup h4{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    transform: rotate(0deg)translateY(-42px) translateX(425px);
+    transition: all .3s linear;
+    transition-delay: .5s;
+}
+.page2:hover hgroup h4 {
+    transform: rotate(0) translateY(0) translateX(0);
+    color: rgba(255, 255, 255, 1);
+}
+hgroup p{
+    font-family: 'Oswald', sans-serif;
+    padding: 0 50px;
+    font-size: 22px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    text-align: center;
+    transform: rotate(0deg)translateY(42px) translateX(-425px);
+    transition: all .3s linear;
+    transition-delay: .5s;
+}
+.page2:hover hgroup p{
+    transform: rotate(0) translateY(0) translateX(0); 
+    color: rgba(255, 255, 255, 1);
+}
+hgroup a{
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #00BCD4;
+    padding: 15px 25px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page2:hover hgroup a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.page21{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 293px;
+    left: 700px;
+    overflow: hidden;
+}
+.page21 img{
+    transition: all .5s linear;
+}
+.page21:hover img{
+    transform: scale(1);
+}
+hgroup{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(103,58,183, .3);
+    transform: scale(1);
+    transition: all .3s;
+    text-align: center;
+    transform: rotate(90deg) translateY(-425px) translateX(425px);
+    overflow: hidden;
+    transition: all .4s linear;
+}
+.page21:hover hgroup{
+    transform: rotate(0) translateY(0) translateX(0); 
+}
+hgroup h4{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    transform: rotate(0deg)translateY(-42px) translateX(425px);
+    transition: all .3s linear;
+    transition-delay: .5s;
+}
+.page21:hover hgroup h4 {
+    transform: rotate(0) translateY(0) translateX(0);
+    color: rgba(255, 255, 255, 1);
+}
+hgroup p{
+    font-family: 'Oswald', sans-serif;
+    padding: 0 50px;
+    font-size: 22px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    text-align: center;
+    transform: rotate(0deg)translateY(42px) translateX(-425px);
+    transition: all .3s linear;
+    transition-delay: .5s;
+}
+.page21:hover hgroup p{
+    transform: rotate(0) translateY(0) translateX(0); 
+    color: rgba(255, 255, 255, 1);
+}
+hgroup a{
+    font-family: 'Oswald', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #00BCD4;
+    padding: 15px 25px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .4s linear;
+    transition-delay: .4s;
+}
+.page21:hover hgroup a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.page3{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: 293px;
+    left: 120px;
+    overflow: hidden;
+}
+.page3 img{
+    transition: all .5s linear;
+}
+.page3:hover img{
+    transform: scale(1);
+}
+div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(103,58,183, .3);
+    transform: scale(1);
+    transition: all .4s;
+    text-align: center;
+    transform: rotate(90deg) translateY(425px) translateX(-425px);
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.page3:hover div{
+    transform: rotate(0) translateY(0) translateX(0); 
+}
+div h4{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0);
+    margin-top: 30px;
+    transform: rotate(0deg)translateY(-42px) translateX(425px);
+    transition: all .3s linear;
+    transition-delay: .5s;
+}
+.page3:hover div h4 {
+    transform: rotate(0) translateY(0) translateX(0);
+    color: rgba(255, 255, 255, 1);
+}
